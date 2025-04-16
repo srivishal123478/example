@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Notifications";
+}
+<h1>Send Notification</h1>
+<form method="post" action="/Features/SendNotification">
+    <label for="message">Notification Message:</label>
+    <input type="text" id="message" name="message" required />
+    <button type="submit">Send Notification</button>
+</form>
+@if (ViewBag.Message != null)
+{
+    <div id="notifications">@ViewBag.Message</div>
+}

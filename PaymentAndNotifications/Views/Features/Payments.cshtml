@@ -1,0 +1,9 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Payments";
+}
+<h1>Payments</h1>
+<p>Click the button below to initiate a payment:</p>
+<form method="post" action="/Features/CreatePayment">
+    <button type="submit">Pay $50.00</button>
+</form>
